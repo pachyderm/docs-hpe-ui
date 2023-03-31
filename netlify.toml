@@ -320,15 +320,8 @@
   status = 301
   force = true
 
-
 [[redirects]]
-  from = "/2.5.x/*"
-  to = "/latest/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/2.5.x/*"
+  from = "/2.6.x/*"
   to = "/latest/:splat"
   status = 301
   force = true
