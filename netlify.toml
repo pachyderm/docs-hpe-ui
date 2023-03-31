@@ -3,6 +3,17 @@
    [headers.values]
       Access-Control-Allow-Origin = "*"
 
+[[redirects]]
+  from = "/latest/concepts/"
+  to = "/latest/learn/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/reference/"
+  to = "/latest/learn/"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/latest/overview/"
@@ -28,6 +39,11 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/latest/getting-started/"
+  to = "/latest/get-started/"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/latest/reference/clients/"
@@ -38,6 +54,12 @@
 [[redirects]]
   from = "/latest/getting-started/beginner-tutorial/"
   to = "/latest/get-started/beginner-tutorial"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/deploy-manage/"
+  to = "/latest/set-up/"
   status = 301
   force = true
 
@@ -294,6 +316,12 @@
   force = true
 
 [[redirects]]
+  from = "/latest/how-tos/"
+  to = "/latest/build-dags/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/latest/how-tos/pipeline-operations/"
   to = "/latest/build-dags/pipeline-operations/"
   status = 301
@@ -375,6 +403,12 @@
 [[redirects]]
   from = "/latest/reference/pachctl/:splat"
   to = "/latest/run-commands/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/troubleshooting/"
+  to = "/latest/debug/"
   status = 301
   force = true
 
