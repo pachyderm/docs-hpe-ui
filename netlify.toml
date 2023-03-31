@@ -3,7 +3,7 @@
    [headers.values]
       Access-Control-Allow-Origin = "*"
 
-# Learn Redirects #
+
 
 [[redirects]]
   from = "/latest/overview/:splat"
@@ -23,7 +23,6 @@
   status = 301
   force = true
 
-# Get Started Redirects # 
 
 [[redirects]]
   from = "/latest/reference/clients/"
@@ -37,7 +36,7 @@
   status = 301
   force = true
 
-# Set Up Redirects #
+
 
 [[redirects]]
   from = "/latest/enterprise/auth/authentication/activate-auth/"
@@ -171,8 +170,6 @@
   status = 301
   force = true
 
-# Manage Redirects # 
-
 [[redirects]]
   from = "/latest/enterprise/auth/authentication/check-user/"
   to = "/latest/manage/check-user"
@@ -208,8 +205,6 @@
   to = "/latest/manage/:splat"
   status = 301
   force = true
-
-# Prepare Data Redirects # 
 
 [[redirects]]
   from = "/latest/how-tos/advanced-data-operations/mount-volume/"
@@ -253,8 +248,6 @@
   status = 301
   force = true
 
-# Build DAGs Redirects # 
-
 [[redirects]]
   from = "/latest/how-tos/pipeline-operations/:splat"
   to = "/latest/build-dags/pipeline-operations/:splat"
@@ -272,8 +265,6 @@
   to = "/latest/build-dags/project-operations/:splat"
   status = 301
   force = true
-
-# Export Data Redirects #
 
 [[redirects]]
   from = "/latest/how-tos/basic-data-operations/export-data-out-pachyderm/sql-egress/"
@@ -299,23 +290,17 @@
   status = 301
   force = true
 
-# Integrate Redirects #
-
 [[redirects]]
   from = "/latest/how-tos/jupyterlab-extension/:splat"
   to = "/latest/integrate/jupyterlab-extension/:splat"
   status = 301
   force = true
 
-# Run Commands Redirects #
-
 [[redirects]]
   from = "/latest/reference/pachctl/:splat"
   to = "/latest/run-commands/:splat"
   status = 301
   force = true
-
-# Debug Redirects #
 
 [[redirects]]
   from = "/latest/how-tos/debugging-operations/view-user-logs/"
@@ -329,16 +314,12 @@
   status = 301
   force = true
 
-# Contributing Redirects #
-
 [[redirects]]
   from = "/latest/contributing/:splat"
   to = "/latest/contribute/:splat"
   status = 301
   force = true
 
-
-# Version Redirects #
 
 [[redirects]]
   from = "/2.5.x/*"
