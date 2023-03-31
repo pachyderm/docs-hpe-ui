@@ -2,10 +2,10 @@
 {{ if .Site.Params.versionDropdown }}
     {{ $removeVersion := print "/" .Section "/"}}
     {{ $versionlessLink := strings.TrimPrefix $removeVersion .RelPermalink }}
-    <button class="merichpe-regular dropdown-alt is-fit outlined-green rounded-4 {{if eq .Section "tags" "series" "knowledge-base"}}is-invisible{{end}}">
+    <button class="merichpe-regular dropdown-alt is-fit outlined-green rounded-4 {{if eq .Section "tags" "series" "knowledge-base" "images"}}is-invisible{{end}}">
         <div id="activeVersion" data-algolia="{{if .IsHome}}hpe-latest{{else if eq .Section  "knowledge-base" "support" "tags" "series" }}hpe-latest{{else if eq .Page.Title "404 Page not found"}}hpe-latest{{else}}{{.Section}}{{end}}" class="activeOption p-2 s metrichpe-regular"> {{if .IsHome}}hpe-latest{{else}} {{ .Section }}{{end}}</div>
         <div class="metrichpe-regular s is-full dropdown-options white rounded-3 outlined-green"> 
-             {{if eq .Section "tags" "series" "knowledge-base"}}
+             {{if eq .Section "tags" "series" "knowledge-base" "images"}}
              {{/*  do nothing  */}}
              {{else if eq .Title "search" }}
              {{/*  do nothing  */}}
