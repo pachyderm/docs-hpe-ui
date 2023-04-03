@@ -1,7 +1,10 @@
 {{$file := .Get "file"}}
+{{ $content := $file | readFile }}
+{{- $content | markdownify -}}
 
-{{ $file  | readFile  }}
 
 {{/*  usage:
     {{% readfile file="/installation/common/01-editions.md" %}}
   */}}
+
+  
