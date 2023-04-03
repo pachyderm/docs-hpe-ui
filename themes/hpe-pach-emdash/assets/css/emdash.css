@@ -2277,6 +2277,16 @@ background: linear-gradient(51deg, rgb(200, 44, 252) 0%, rgb(125, 111, 232) 40%,
 color: var(--is-text-color-inverted)
 }
 
+.hpe-bg-gradient-reverse {
+background: -webkit-linear-gradient(39deg, rgb(11, 212, 202) 0%, rgb(50, 178, 213) 40%, rgb(125, 111, 232) 80%, rgb(200, 44, 252) 100%);
+background: -o-linear-gradient(39deg, rgb(11, 212, 202) 0%, rgb(50, 178, 213) 40%, rgb(125, 111, 232) 80%, rgb(200, 44, 252) 100%);
+background: -ms-linear-gradient(39deg, rgb(11, 212, 202) 0%, rgb(50, 178, 213) 40%, rgb(125, 111, 232) 80%, rgb(200, 44, 252) 100%);
+background: -moz-linear-gradient(39deg, rgb(11, 212, 202) 0%, rgb(50, 178, 213) 40%, rgb(125, 111, 232) 80%, rgb(200, 44, 252) 100%);
+background: linear-gradient(51deg, rgb(11, 212, 202) 0%, rgb(50, 178, 213) 40%, rgb(125, 111, 232) 80%, rgb(200, 44, 252) 100%);
+color: var(--is-text-color-inverted)
+}
+
+
 .child-article:hover {
   background-color: var(--is-green);
   color: var(--is-white);
