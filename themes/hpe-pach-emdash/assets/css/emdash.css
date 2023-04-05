@@ -2294,6 +2294,6 @@ color: var(--is-text-color-inverted)
 
 .sdk {
   width: 100%;
-  height:100%;
+  height: 900px;
   border: none;
 }
