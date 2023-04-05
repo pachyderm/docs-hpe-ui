@@ -1,3 +1,8 @@
+[build]
+  command = "pip install -r requirements.txt && hugo && rst2html.py --halt=warning -v -e utf-8 --no-generator --no-source-link public/**/*.html"
+  publish = "public"
+
+
 [[headers]]
    for = "/*"
    [headers.values]
