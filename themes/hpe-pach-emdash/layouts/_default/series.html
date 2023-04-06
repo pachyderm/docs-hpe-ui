@@ -16,7 +16,6 @@ value. */}} {{ define "main" }} {{ partial "glossary-directory.html" . }}
   </section>
   <section class="stack">
     {{ range .Pages.ByParam "seriesPart" }} {{ if eq .Params.release "latest" }}
-    {{.Params.release}}
     <div class="content">
       <a
         class="button black hpe-bg-gradient-reverse rounded-1 p-2 mt-4 xxl bold"
