@@ -41,7 +41,7 @@ if (document.querySelectorAll('[data-type="wizard"]')) {
     function getAnswers({wizard, answers}){
 
         // get all buttons with the purple class
-        let activeButtons = wizard.querySelectorAll('button.purple')
+        let activeButtons = wizard.querySelectorAll('button.green')
 
         // get the text of all the buttons with the purple class
         let activeButtonText = []
