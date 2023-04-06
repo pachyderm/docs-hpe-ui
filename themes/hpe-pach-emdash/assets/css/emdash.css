@@ -2017,7 +2017,7 @@ box-shadow: inset 0 9000px 0px rgba(255, 255, 255, 0.1);
 
 
 .h-scroll {
-  height: 700px;
+  max-height: 100vh;
   overflow-y: scroll;
 }
 
@@ -2298,3 +2298,5 @@ color: var(--is-text-color-inverted)
   height: 900px;
   border: none;
 }
+
+
