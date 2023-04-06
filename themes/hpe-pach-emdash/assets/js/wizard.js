@@ -22,11 +22,11 @@ if (document.querySelectorAll('[data-type="wizard"]')) {
             buttons.forEach((button) => {
                 button.addEventListener('click', (e) => {
                     // add purple class to the clicked button
-                    e.target.classList.add('purple')
+                    e.target.classList.add('green')
                     // remove purple class from the other buttons
                     buttons.forEach((button) => {
                         if (button !== e.target) {
-                            button.classList.remove('purple')
+                            button.classList.remove('green')
                         }
                     } )
 
