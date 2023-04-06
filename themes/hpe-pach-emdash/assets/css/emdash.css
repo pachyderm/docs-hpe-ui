@@ -2322,3 +2322,6 @@ color: var(--is-text-color-inverted)
 }
 
 
+.invert:hover {
+  filter: invert(1);
+}
