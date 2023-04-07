@@ -4,6 +4,9 @@
 {{ $id := sha1 (printf "%s-%s-%s" $repo $file $lines) }}
 {{ $lang := .Get "lang" }}
 
+{{$placeholder := "a"}}
+
+
 <div class="stack black sp-3 c-sp-1 rounded-3 outlined">
   <div class="highlight"><pre tabindex="0" class="chroma">
     <code id="{{$id}}" class="language-{{$lang}}" data-lang="{{$lang}}"></code>
@@ -27,5 +30,3 @@
     .catch(error => console.error(error))
 
 </script>
-
-
