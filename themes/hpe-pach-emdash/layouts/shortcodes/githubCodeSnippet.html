@@ -1,0 +1,40 @@
+{{ $repo := .Get "repo" }}
+{{ $file := .Get "file" }}
+{{ $lines := .Get "lines" }}
+
+<pre id="github-code-snippet" style="white-space: pre-wrap; word-wrap: break-word;"></pre>
+
+<script>
+  async function fetchCodeSnippet(repo, file, lines) {
+    const url = `https://raw.githubusercontent.com/${repo}/master/${file}`;
+    const response = await fetch(url);
+    const content = await response.text();
+
+    let snippet = '';
+
+    if (lines) {
+      const [startLine, endLine] = lines.split('-').map(line => parseInt(line, 10));
+      const linesArray = content.split('\n');
+
+      snippet = linesArray.slice(startLine - 1, endLine).join('\n');
+    } else {
+      snippet = content;
+    }
+
+    return snippet;
+
+    console.log(snippet)
+  }
+
+  (async () => {
+    const repo = '{{ $repo }}';
+    const file = '{{ $file }}';
+    const lines = '{{ $lines }}';
+    const snippet = await fetchCodeSnippet(repo, file, lines);
+    const pre = document.getElementById('github-code-snippet');
+
+    pre.textContent = snippet;
+  });
+
+
+</script>

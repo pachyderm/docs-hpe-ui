@@ -1,7 +1,7 @@
 // listen for any element with the class of "clippy" to be clicked
 
 var clippy = document.getElementsByClassName("clippy")
-for (var i = 0; i < clippy.length; i++) {
+for (var i = 0; i < clippy?.length; i++) {
     clippy[i].addEventListener("click", function() {
         // get the code block
         var code = this.parentNode.parentNode.querySelector("code")
