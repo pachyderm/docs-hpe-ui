@@ -45,6 +45,42 @@
   force = true
 
 [[redirects]]
+  from = "/latest/concepts/data-concepts/branch"
+  to = "/latest/learn/glossary/branch"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/concepts/data-concepts/commit"
+  to = "/latest/learn/glossary/commit"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/concepts/data-concepts/file"
+  to = "/latest/learn/glossary/file"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/concepts/data-concepts/provenance"
+  to = "/latest/learn/glossary/provenance"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/concepts/data-concepts/history"
+  to = "/latest/learn/glossary/history"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/concepts/data-concepts/repo"
+  to = "/latest/learn/glossary/input-repo"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/latest/getting-started/"
   to = "/latest/get-started/"
   status = 301
