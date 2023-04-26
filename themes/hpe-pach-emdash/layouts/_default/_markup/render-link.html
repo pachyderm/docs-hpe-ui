@@ -61,6 +61,9 @@ either of these shortcodes in conjunction with this render hook.
 @returns {template.html}
 */}}
 
+
+{{$release := "latest"}}
+
 {{- /* Initialize. */}}
 {{- $renderHookName := "link" }}
 
@@ -90,10 +93,14 @@ either of these shortcodes in conjunction with this render hook.
 {{- $u := urls.Parse .Destination }}
 
 {{- /* Set common message. */}}
+
 {{- $msg := printf "Broken link found: %q in %s" $u.String $contentPath }}
 
 {{- /* Set attributes for anchor element. */}}
 {{- $attrs := dict "href" $u.String }}
+
+{{ if eq .Page.Params.release $release}}
+
 {{- if $u.IsAbs }}
   {{- /* Destination is external. */}}
   {{- $attrs = merge $attrs (dict "rel" "external") }}
@@ -158,6 +165,8 @@ either of these shortcodes in conjunction with this render hook.
 {{- with .Title }}
   {{- $attrs = merge $attrs (dict "title" .) }}
 {{- end -}}
+
+{{end}}
 
 {{- /* Render anchor element. */ -}}
 <a
