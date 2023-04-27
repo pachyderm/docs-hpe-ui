@@ -353,6 +353,12 @@
   force = true
 
 [[redirects]]
+  from = "/latest/deploy-manage/deploy/helm-install/"
+  to = "/latest/manage/secrets"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/latest/deploy-manage/deploy/prometheus/"
   to = "/latest/manage/prometheus"
   status = 301
