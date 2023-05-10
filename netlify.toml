@@ -27,7 +27,6 @@
   status = 301
   force = true
 
-
 [[redirects]]
   from = "/latest/reference/"
   to = "/latest/learn/"
@@ -518,6 +517,24 @@
 [[redirects]]
   from = "/latest/concepts/pipeline-concepts/datum/join/"
   to = "/latest/build-dags/pipeline-spec/input-join"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/concepts/pipeline-concepts/datum/group/"
+  to = "/latest/build-dags/pipeline-spec/input-group"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/concepts/pipeline-concepts/datum/cross-union/"
+  to = "/latest/build-dags/pipeline-spec/input-cross/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/concepts/pipeline-concepts/datum/metadata/"
+  to = "/latest/build-dags/datum-operations/get-metadata/"
   status = 301
   force = true
 
