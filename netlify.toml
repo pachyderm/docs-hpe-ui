@@ -516,6 +516,12 @@
   force = true
 
 [[redirects]]
+  from = "/latest/concepts/pipeline-concepts/datum/join/"
+  to = "/latest/build-dags/pipeline-spec/input-join"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/latest/reference/pipeline-spec/:splat"
   to = "/latest/build-dags/pipeline-spec/:splat"
   status = 301
