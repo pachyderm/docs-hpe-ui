@@ -130,6 +130,18 @@
   force = true
 
 [[redirects]]
+  from = "/latest/how-tos/console-guide/"
+  to = "/latest/learn/console-guide"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/how-tos/console-guide/:splat"
+  to = "/latest/learn/console-guide/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/latest/getting-started/"
   to = "/latest/get-started/"
   status = 301
@@ -268,6 +280,18 @@
   force = true
 
 [[redirects]]
+  from = "/latest/enterprise/activate-via-pachctl/"
+  to = "/latest/set-up/enterprise/activate-via-pachctl"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/enterprise/activate-via-helm/"
+  to = "/latest/set-up/enterprise/activate-via-helm/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/latest/enterprise/auth/authentication/activate-auth/"
   to = "/latest/set-up/authentication"
   status = 301
@@ -276,6 +300,12 @@
 [[redirects]]
   from = "/latest/deploy-manage/deploy/environment-variables/"
   to = "/latest/set-up/environment-variables"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/enterprise/auth/"
+  to = "/latest/set-up/connectors/"
   status = 301
   force = true
 
@@ -557,6 +587,18 @@
   force = true
 
 [[redirects]]
+  from = "/latest/how-tos/advanced-data-operations/"
+  to = "/latest/build-dags/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/how-tos/basic-data-operations/"
+  to = "/latest/build-dags/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/latest/how-tos/basic-data-operations/export-data-out-pachyderm/sql-egress/"
   to = "/latest/export-data/sql-egress"
   status = 301
@@ -577,6 +619,19 @@
 [[redirects]]
   from = "/latest/how-tos/basic-data-operations/export-data-out-pachyderm/mount-repo-to-local-computer/"
   to = "/latest/export-data/mount-repo-to-local-computer"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/latest/how-tos/s3-gateway-operations/"
+  to = "/latest/export-data/s3-gateway-operations"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/latest/how-tos/s3-gateway-operations/:splat"
+  to = "/latest/export-data/s3-gateway-operations/:splat"
   status = 301
   force = true
 
