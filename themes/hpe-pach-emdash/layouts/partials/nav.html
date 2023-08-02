@@ -21,8 +21,11 @@
       {{ partial "featureVersionDropdown.html" . }}
     {{end}}
   
-      <a href="https://www.hpe.com/us/en/hpe-machine-learning-data-management-software.html?emodal=/us/en/greenlake/fragments/modal-fragment/hpe-machine-learning-data-management-software-modal-form.fragment.html" class="green is-fit is-hidden-touch s semi-bold px-3 py-2 rounded-4"> Demo</a>
+      <a href="https://github.com/pachyderm" class="is-fit"><img class="" style="width: 25px;" src="/images/github.svg"></a>
+      <a href="https://www.pachyderm.com/slack" class="is-fit"> <img class="" style="width: 25px;" src="/images/slack.svg"></a>
+      {{if ne .Page.Params.layout "sdk"}}
       <button id="darkModeButton" class="is-fit black grayscale px-3 py-2 rounded-6" onclick="darkMode()">🌙</button>
+      {{end}}
     </div>
  
   

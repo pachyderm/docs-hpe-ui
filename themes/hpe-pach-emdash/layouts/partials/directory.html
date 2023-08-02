@@ -1,6 +1,16 @@
 <section class="pt-5 sticky is-one-fifth directory h-scroll px-3 is-hidden-mobile">
   
-{{ template "directory" (dict "dir" .FirstSection.Sections "current" .RelPermalink "parent" .Parent "section" .CurrentSection "level" "1")  }}
+  {{if .IsHome}}
+  {{/*  only show the section matching "latest"  */}}
+
+  {{ $latestSection := .Site.GetPage "section" "latest" }}
+
+  {{ template "directory" (dict "dir" $latestSection.Sections "current" .RelPermalink "parent" .Parent "section" .CurrentSection "level" "1")  }}
+
+
+  {{else}}
+  {{ template "directory" (dict "dir" .FirstSection.Sections "current" .RelPermalink "parent" .Parent "section" .CurrentSection "level" "1")  }}
+  {{end}}
 
 {{ define "directory" }}
 
