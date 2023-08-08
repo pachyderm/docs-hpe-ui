@@ -2,8 +2,8 @@
 "series" taxonomy. - Series pages are ordered by the "seriesPart" parameter,
 which is a number. - Markdown pages should not have more than one "series" tag
 value. */}} {{ define "main" }} {{ partial "glossary-directory.html" . }}
-<main class="content px-3">
-  <div class="spread-between my-2">
+<main class="stack content px-3">
+  <div class="spread-between my-2 is-fit-y">
     {{ partial "featureBreadcrumbs.html" . }} {{ partial "featureEditLink.html"
     . }}
   </div>

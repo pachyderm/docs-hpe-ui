@@ -10,11 +10,11 @@
     --xxsmall-text: calc(.5rem);   
     --xsmall-text: calc(.75rem);  
     --small-text: calc(.9rem);  
-    --medium-text: calc(1.1rem);  
-    --large-text: calc(1.3rem);  
-    --xlarge-text: calc(1.625rem);
-    --xxlarge-text: calc(1.875rem);
-    --xxxlarge-text: calc(2.5rem);
+    --medium-text: calc(1rem);  
+    --large-text: calc(1.1rem);  
+    --xlarge-text: calc(1.425rem);
+    --xxlarge-text: calc(1.675rem);
+    --xxxlarge-text: calc(2.3rem);
 
     --spacing-1: calc(.2rem);
     --spacing-2: calc(.4rem);
@@ -403,7 +403,7 @@ ol li::marker {
  }
  
  .content {
-  overflow-x: hidden;
+
  }
 
  :is(.content) :is(p,ul,ol,li) {
@@ -572,7 +572,32 @@ button, .button {
 .sticky {
   position: sticky;
   top:0;
-}
+  }
+  
+  .sticky-1 {
+  position: sticky;
+  top:1rem;
+  }
+  
+  .sticky-2 {
+  position: sticky;
+  top:2rem;
+  }
+  
+  .sticky-3 {
+  position: sticky;
+  top:3rem;
+  }
+  
+  .sticky-4 {
+  position: sticky;
+  top:4rem;
+  }
+  
+  .sticky-5 {
+  position: sticky;
+  top:5rem;
+  }
 
 .fixed {
   position: fixed;
