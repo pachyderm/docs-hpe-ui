@@ -32,7 +32,9 @@
             {{/* Does not show the hero section if disabled from config.yaml */}}
         {{end}}
         {{ partial "featureBetaNotice.html" . }}
-        {{ .Content }}
+        <article class="content">
+            {{ .Content }}
+        </article>
         {{ partial "featureChildPages.html" . }}
         {{ partial "featureNextPrev.html" . }}
         {{ partial "footer.html" . }}
