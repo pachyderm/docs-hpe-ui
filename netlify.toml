@@ -4,7 +4,7 @@
       Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "https://mldm.pachyderm.com/:splat"
+  from = "/*"
   to = "https://hpe-ai-solutions-documentation.netlify.app/products/mldm/:splat"
   status = 301
   force = true
